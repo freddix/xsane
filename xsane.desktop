@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=XSane
+Name[pl]=Xsane 
+Type=Application
+Comment=Acquire images from a scanner
+Comment[pl]=Pobiera obrazy ze skanera
+Icon=xsane
+Exec=xsane
+Terminal=false
+Categories=GTK;Graphics;Scanning;
+

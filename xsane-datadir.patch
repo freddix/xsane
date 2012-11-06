@@ -1,0 +1,35 @@
+diff -aurN xsane-0.996.orig/doc/Makefile.in xsane-0.996/doc/Makefile.in
+--- xsane-0.996.orig/doc/Makefile.in	2009-03-23 09:51:08.000000000 +0100
++++ xsane-0.996/doc/Makefile.in	2009-03-23 09:51:54.000000000 +0100
+@@ -21,7 +21,7 @@
+ oldincludedir = /usr/include
+ configdir = ${sysconfdir}/sane.d
+ sanedatadir = ${datadir}/sane
+-xsanedocdir = ${datadir}/sane/xsane/doc
++xsanedocdir = ${datadir}/xsane/doc
+ 
+ MKINSTALLDIRS = @MKINSTALLDIRS@
+ INSTALL = @INSTALL@
+@@ -42,7 +42,7 @@
+ 
+ %.1: %.man
+ 	sed -e 's|@DATADIR@|$(datadir)|g' \
+-	    -e 's|@SANEDATADIR@|$(sanedatadir)|g' \
++	    -e 's|@SANEDATADIR@|$(datadir)|g' \
+ 	    -e 's|@CONFIGDIR@|$(configdir)|g' \
+ 	    -e 's|@LIBDIR@|$(libdir)|g' \
+ 	    -e 's|@BINDIR@|$(bindir)|g' \
+diff -aurN xsane-0.996.orig/src/Makefile.in xsane-0.996/src/Makefile.in
+--- xsane-0.996.orig/src/Makefile.in	2009-03-23 09:51:08.000000000 +0100
++++ xsane-0.996/src/Makefile.in	2009-03-23 09:52:37.000000000 +0100
+@@ -21,8 +21,8 @@
+ includedir = @includedir@
+ oldincludedir = /usr/include
+ configdir = ${sysconfdir}/sane.d
+-sanedatadir = ${datadir}/sane
+-xsanedocdir = ${datadir}/sane/xsane/doc
++sanedatadir = ${datadir}
++xsanedocdir = ${datadir}/xsane/doc
+ desktopappdir = @datadir@/applications
+ pixmapdir = @datadir@/pixmaps
+ 
