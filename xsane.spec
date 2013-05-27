@@ -1,11 +1,11 @@
 Summary:	Graphical scanning frontend
 Name:		xsane
-Version:	0.998
+Version:	0.999
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://www.xsane.org/download/%{name}-%{version}.tar.gz
-# Source0-md5:	936f1cc76b37caa8f285e1e15ac7e0aa
+# Source0-md5:	9927f21e1ab6ba96315e7f0e30746deb
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-datadir.patch
