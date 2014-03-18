@@ -1,7 +1,7 @@
 Summary:	Graphical scanning frontend
 Name:		xsane
 Version:	0.999
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://www.xsane.org/download/%{name}-%{version}.tar.gz
@@ -12,6 +12,7 @@ Patch0:		%{name}-datadir.patch
 Patch1:		%{name}-xdg-open.patch
 Patch2:		%{name}-libpng.patch
 Patch3:		%{name}-Makefile.patch
+Patch4:		%{name}-fix-mouse-events.patch
 URL:		http://www.xsane.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -44,6 +45,7 @@ XSane plugin for GIMP.
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 mv -f po/{sr,sr@Latn}.po
 mv -f po/{zh,zh_TW}.po
